@@ -33,47 +33,64 @@ const AddEmployeePage = () => {
     <div>
 
       <form
+
         onSubmit={e => {
           e.preventDefault()
           postCall()
         }}
       >
-        <input type="text"
-          placeholder="Doctor"
-          value={firstName}
-          onChange={e => {
-            setFirstName(e.target.value)
-          }}
-        />
+        <div className="col-md-4 mb-3">
+          <input type="text"
+            placeholder="First Name"
+            value={firstName}
+            onChange={e => {
+              setFirstName(e.target.value)
+            }}
+          />
+        </div>
 
-        <input type="text"
-          placeholder="Strange"
-          value={lastName}
-          onChange={e => {
-            setLastName(e.target.value)
-          }}
-        />
-        <input type="email"
-          placeholder="employee@email.com"
-          value={email}
-          onChange={e => {
-            setEmail(e.target.value)
-          }}
-        />
-        <input type="number"
-          placeholder="phone number"
-          onChange={e => {
-            setPhoneNumber(e.target.value)
-          }}
-        />
-        <input type="text"
-          placeholder="Title"
-          onChange={e => {
-            setJobTitle(e.target.value)
-          }}
-        />
+        <div className="col-md-4 mb-3">
+          <input type="text"
+            placeholder="Last Name"
+            value={lastName}
+            onChange={e => {
+              setLastName(e.target.value)
+            }}
+          />
+        </div>
+
+
+        <div className="col-md-4 mb-3">
+          <input type="email"
+            placeholder="employee@email.com"
+            value={email}
+            onChange={e => {
+              setEmail(e.target.value)
+            }}
+          />
+        </div>
+
+        <div className="col-md-4 mb-3">
+          <input type="number"
+            placeholder="phone number"
+            onChange={e => {
+              setPhoneNumber(e.target.value)
+            }}
+          />
+        </div>
+
+        <div className="col-md-4 mb-3">
+          <input type="text"
+            placeholder="Title"
+            onChange={e => {
+              setJobTitle(e.target.value)
+            }}
+          />
+        </div>
+
         <button type="submit"
-          onClick={submit}>
+          onClick={submit}
+          className="btn btn-primary">
           submit
         </button>
       </form>

@@ -20,31 +20,30 @@ const EmployeePage = props => {
 
   return (
     <main>
-      <ul>
-        <li>{employee.firstName}</li>
-        <li>{employee.lastName}</li>
-        <li>{employee.email}</li>
-        <li>{employee.address}</li>
-        <li>{employee.phoneNumber}</li>
-        <li>{employee.JobTitle}</li>
-        <li>{employee.companyKey}</li>
-        <li>{employee.salary}</li>
-        <li>{employee.ptoHours}</li>
-        <li>{employee.birthday}</li>
-        <li>{employee.zip}</li>
-        <li>{employee.state}</li>
-        <li>{employee.profileImage}</li>
-        <li>{employee.jobDescription}</li>
-        <li>{employee.jobDescription}</li>
-        <li>{employee.isFullTime}</li>
-        <li>{employee.interestingFact}</li>
-        <li>{employee.id}</li>
-        <li>{employee.hiredDate}</li>
-        <li>{employee.gender}</li>
-        <li>{employee.emergencyContactPhone}</li>
-        <li>{employee.emergencyContactPerson}</li>
-        <li>{employee.city}</li>
-        <li>{employee.emergencyContactAddress}</li>
+      <ul className="list-group-item">
+        <li className="list-group-item"> first name: {employee.firstName}</li>
+        <li className="list-group-item">Last Name: {employee.lastName}</li>
+        <li className="list-group-item">E-mail: {employee.email}</li>
+        <li className="list-group-item">Address: {employee.address}</li>
+        <li className="list-group-item">phone number: {employee.phoneNumber}</li>
+        <li className="list-group-item">job title: {employee.JobTitle}</li>
+        <li className="list-group-item">Company: {employee.companyKey}</li>
+        <li className="list-group-item">Salary: {employee.salary}</li>
+        <li className="list-group-item">PTO: {employee.ptoHours}</li>
+        <li className="list-group-item">Birthday: {employee.birthday}</li>
+        <li className="list-group-item">State: {employee.state}</li>
+        <li className="list-group-item">City: {employee.city}</li>
+        <li className="list-group-item">Zipcode: {employee.zip}</li>
+        <li className="list-group-item">Image: {employee.profileImage}</li>
+        <li className="list-group-item">Description: {employee.jobDescription}</li>
+        <li className="list-group-item">Fulltime: {employee.isFullTime}</li>
+        <li className="list-group-item">Fun Fact: {employee.interestingFact}</li>
+        <li className="list-group-item">ID Number: {employee.id}</li>
+        <li className="list-group-item">Hire Date: {employee.hiredDate}</li>
+        <li className="list-group-item">M/F {employee.gender}</li>
+        <li className="list-group-item">Emegency Contact Number: {employee.emergencyContactPhone}</li>
+        <li className="list-group-item">Emegency Contact Name: {employee.emergencyContactPerson}</li>
+        <li className="list-group-item">Emegency Contact Address: {employee.emergencyContactAddress}</li>
       </ul>
     </main>
   );
